@@ -1,0 +1,10 @@
+				  <% 
+				  var image_src = '../resources/img/helmet.jpg';
+				  if(show_table){
+					var players_photo = '';
+					show_table.forEach(function(value){
+						
+						players_photo += '<option>' + value.image_src + '</option>';
+					}); %>
+					<%- players_photo %> 
+				<% } %>		
